@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Guess The Number</title>
+</head>
+<body>
+    <div id="container">
+        <div id="increase-buttons">
+            <div id="increase-ones" onclick="increaseones()"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+            <div id="increase-tens" onclick="increasetens()"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+            <div id="increase-hundreds" onclick="increasehundreds()"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+            <div id="increase-thousands" onclick="increasethousands()"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
+        </div>
+        <div id="numbers">
+            <div id="ones">0</div>
+            <div id="tens">0</div>
+            <div id="hundreds">0</div>
+            <div id="thousands">0</div>
+        </div>
+        <div id="decrease-buttons">
+            <div id="decrease-ones" onclick="decreaseones()"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div id="decrease-tens" onclick="decreasetens()"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div id="decrease-hundreds" onclick="decreasehundreds()"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div id="decrease-thousands" onclick="decreasethousands()"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+        </div>
+        <div id="scoreboard"></div>
+        <div id="check-button" onclick="checknumbers()"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
